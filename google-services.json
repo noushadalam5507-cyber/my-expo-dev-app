@@ -1,0 +1,34 @@
+{
+  "project_info": {
+    "project_number": "886472016064",
+    "project_id": "instagrand-30a3f",
+    "storage_bucket": "instagrand-30a3f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886472016064:android:60c835df5a0ea64e112d25",
+        "android_client_info": {
+          "package_name": "com.instagrand.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886472016064-ir1nmov278ovgta0mtml0pauqciatvka.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-LmG2OmldNqPJMaWy7KWF8EEIEEAx-zE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

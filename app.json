@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "NovaGrand Pro",
+    "slug": "novagrand-pro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#05070e"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.novagrand.pro",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow NovaGrand to access your camera for 4K video calls and photo posts.",
+        "NSMicrophoneUsageDescription": "Allow NovaGrand to access your microphone for HD audio/video calls.",
+        "NSPhotoLibraryUsageDescription": "Allow NovaGrand to access your photos to upload media and set wallpapers."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#05070e"
+      },
+      "package": "com.novagrand.pro",
+      "versionCode": 1,
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_CONNECT"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow NovaGrand to access camera for live video calling and Reels creation."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow NovaGrand to access your photo gallery for profile and chat wallpapers."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow NovaGrand to access microphone for clear voice and video calls."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "fa51faa8-619e-4568-8cb2-0ced59993f3b"
+      }
+    }
+  }
+}
