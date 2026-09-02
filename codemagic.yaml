@@ -13,6 +13,10 @@ workflows:
       - name: Force Expo Prebuild to Create Native Android Engine
         script: |
           npx expo prebuild --platform android
+      - name: Copy Firebase Config to Android
+        script: |
+          mkdir -p android/app
+          cp google-services.json android/app/google-services.json
       - name: Compile and Assemble Heavy Production APK
         script: |
           cd android
