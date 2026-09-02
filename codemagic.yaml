@@ -12,7 +12,7 @@ workflows:
           npm install
       - name: Force Expo Prebuild to Create Native Android Engine
         script: |
-          npx expo prebuild --platform android --no-interactive
+          npx expo prebuild --platform android
       - name: Compile and Assemble Heavy Production APK
         script: |
           cd android
