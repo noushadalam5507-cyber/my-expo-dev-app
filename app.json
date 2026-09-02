@@ -4,29 +4,12 @@
     "slug": "novagrand-pro",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./adaptive-icon.png",
     "userInterfaceStyle": "dark",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#05070e"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.novagrand.pro",
-      "infoPlist": {
-        "NSCameraUsageDescription": "Allow NovaGrand to access your camera for 4K video calls and photo posts.",
-        "NSMicrophoneUsageDescription": "Allow NovaGrand to access your microphone for HD audio/video calls.",
-        "NSPhotoLibraryUsageDescription": "Allow NovaGrand to access your photos to upload media and set wallpapers."
-      }
-    },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#05070e"
+        "foregroundImage": "./adaptive-icon.png",
+        "backgroundColor": "#05070a"
       },
       "package": "com.novagrand.pro",
       "versionCode": 1,
@@ -52,25 +35,25 @@
       [
         "expo-camera",
         {
-          "cameraPermission": "Allow NovaGrand to access camera for live video calling and Reels creation."
+          "cameraPermission": "Allow NovaGrand to access camera for live video"
         }
       ],
       [
         "expo-image-picker",
         {
-          "photosPermission": "Allow NovaGrand to access your photo gallery for profile and chat wallpapers."
+          "photosPermission": "Allow NovaGrand to access your photo gallery for reels"
         }
       ],
       [
         "expo-av",
         {
-          "microphonePermission": "Allow NovaGrand to access microphone for clear voice and video calls."
+          "microphonePermission": "Allow NovaGrand to access microphone for call"
         }
       ]
     ],
     "extra": {
       "eas": {
-        "projectId": "fa51faa8-619e-4568-8cb2-0ced59993f3b"
+        "projectId": "fa51faa6-e19e-4560-8cb2-0ced59993f3b"
       }
     }
   }
